@@ -1,0 +1,17 @@
+/*
+
+It's Oh So Quiet
+Pippin Barr
+
+*/
+
+body {
+  margin: 10%;
+}
+
+#quiet {
+  height:200px;
+  width:200px;
+  background-color: green;
+  opacity:0;
+}
