@@ -1,0 +1,30 @@
+/*
+
+Assignment 02 - Personification of the web/Interactive personality
+Rebecca Malagisi
+
+Some description of the CSS styling
+
+*/
+
+
+html, body {
+  height:100%;
+  font-family: sans-serif;
+
+}
+
+
+
+#meter {
+  position: absolute;
+
+  /*height:60px;
+  width:60px;*/
+  bottom:20px;
+  right:200px;
+  /*border: solid 2px red;*/
+
+  /**/
+
+}
