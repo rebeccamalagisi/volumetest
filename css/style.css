@@ -19,8 +19,8 @@ html, body {
 #meter {
   position: absolute;
 
-  /*height:60px;
-  width:60px;*/
+  height:600px;
+  width:600px;
   bottom:20px;
   right:200px;
   /*border: solid 2px red;*/

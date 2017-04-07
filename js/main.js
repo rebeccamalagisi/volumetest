@@ -27,9 +27,9 @@ SOFTWARE.
 
 var audioContext = null;
 var meter = null;
-var canvasContext = null;
-var WIDTH=50;
-var HEIGHT=500;
+//var canvasContext = null;
+var WIDTH=100;
+var HEIGHT=100;
 var rafID = null;
 
 //////////////////////////////////////////////
@@ -95,7 +95,7 @@ function gotStream(stream) {
 
 function drawLoop( time ) {
     // clear the background
-    canvasContext.clearRect(0,0,WIDTH,HEIGHT);
+    //canvasContext.clearRect(0,0,WIDTH,HEIGHT);
 
     // check if we're currently clipping
     if (meter.checkClipping())
@@ -109,3 +109,23 @@ function drawLoop( time ) {
     // set up the next visual callback
     rafID = window.requestAnimationFrame( drawLoop );
 }
+
+
+
+
+// function drawLoop( time ) {
+//     // clear the background
+//     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
+//
+//     // check if we're currently clipping
+//     if (meter.checkClipping())
+//         canvasContext.fillStyle = "red";
+//     else
+//         canvasContext.fillStyle = "green";
+//
+//     // draw a bar based on the current volume
+//     canvasContext.fillRect(0, 0, WIDTH, meter.volume*HEIGHT*1.4);
+//
+//     // set up the next visual callback
+//     rafID = window.requestAnimationFrame( drawLoop );
+// }
