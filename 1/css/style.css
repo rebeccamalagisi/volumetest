@@ -15,16 +15,9 @@ html, body {
 }
 
 
-
-#meter {
-  position: absolute;
-
-  height:600px;
-  width:600px;
-  bottom:20px;
-  right:200px;
-  /*border: solid 2px red;*/
-
-  /**/
+#audioDiv {
+  height:300px;
+  width:300px;
+  background-color: white;
 
 }
